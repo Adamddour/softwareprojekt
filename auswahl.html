@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>StudyPlannerManager</h1>
+            <img src="logow.png" alt="Header Image">
+        </div>
+    </header>
+    <main>
+        <h2>Kurswahl für das Semester</h2>
+        <div class="course-container">
+            <form id="courseSelectionForm1">
+                <h3>Stundenplan 1</h3>
+                <div class="course-selection">
+                    <label>Wählen Sie Ihre Kurse aus:</label><br>
+                    <div class="course-list">
+                        <div>
+                            <input type="checkbox" id="mikrocontroller-v" name="course" value="Mikrocontroller-V">
+                            <label for="mikrocontroller-v">Mikrocontroller-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mikrocontroller-ü" name="course" value="Mikrocontroller-Ü">
+                            <label for="mikrocontroller-ü">Mikrocontroller-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mathematik-für-informatiker-3-ü" name="course" value="Mathematik für Informatiker 3-Ü">
+                            <label for="mathematik-für-informatiker-3-ü">Mathematik für Informatiker 3-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mathematik-für-informatiker-3-v" name="course" value="Mathematik für Informatiker 3-V">
+                            <label for="mathematik-für-informatiker-3-v">Mathematik für Informatiker 3-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="webtechnologien-2-v" name="course" value="Webtechnologien 2-V">
+                            <label for="webtechnologien-2-v">Webtechnologien 2-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="webtechnologien-2-ü" name="course" value="Webtechnologien 2-Ü">
+                            <label for="webtechnologien-2-ü">Webtechnologien 2-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="webtechnologien-2-p" name="course" value="Webtechnologien 2-P">
+                            <label for="webtechnologien-2-p">Webtechnologien 2-P</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ringvorlesung" name="course" value="Ringvorlesung">
+                            <label for="ringvorlesung">Ringvorlesung</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mikrocontroller-p" name="course" value="Mikrocontroller-P">
+                            <label for="mikrocontroller-p">Mikrocontroller-P</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="it-sicherheit-ü" name="course" value="IT-Sicherheit-Ü">
+                            <label for="it-sicherheit-ü">IT-Sicherheit-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="it-sicherheit-v" name="course" value="IT-Sicherheit-V">
+                            <label for="it-sicherheit-v">IT-Sicherheit-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="it-sicherheit-p" name="course" value="IT-Sicherheit-P">
+                            <label for="it-sicherheit-p">IT-Sicherheit-P</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form id="courseSelectionForm2">
+                <h3>Stundenplan 2</h3>
+                <div class="course-selection">
+                    <label>Wählen Sie Ihre Kurse aus:</label><br>
+                    <div class="course-list">
+                        <!-- Course list for Stundenplan 2 populated from JSON -->
+                        <div>
+                            <input type="checkbox" id="software-engineering-v-2" name="course" value="Software Engineering-V">
+                            <label for="software-engineering-v-2">Software Engineering-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="software-engineering-ü-2" name="course" value="Software Engineering-Ü">
+                            <label for="software-engineering-ü-2">Software Engineering-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="software-engineering-p-2" name="course" value="Software Engineering-P">
+                            <label for="software-engineering-p-2">Software Engineering-P</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mathematik-für-informatiker-2-ü-2" name="course" value="Mathematik für Informatiker 2-Ü">
+                            <label for="mathematik-für-informatiker-2-ü-2">Mathematik für Informatiker 2-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="java-programmierung-2-v-2" name="course" value="Java-Programmierung 2-V">
+                            <label for="java-programmierung-2-v-2">Java-Programmierung 2-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="java-programmierung-2-ü-2" name="course" value="Java-Programmierung 2-Ü">
+                            <label for="java-programmierung-2-ü-2">Java-Programmierung 2-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="java-programmierung-2-p-2" name="course" value="Java-Programmierung 2-P">
+                            <label for="java-programmierung-2-p-2">Java-Programmierung 2-P</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="python-v-2" name="course" value="Python-V">
+                            <label for="python-v-2">Python-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="python-ü-2" name="course" value="Python-Ü">
+                            <label for="python-ü-2">Python-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="python-p-2" name="course" value="Python-P">
+                            <label for="python-p-2">Python-P</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="schluessel-2-v-2" name="course" value="Schlüssel 2-V">
+                            <label for="schluessel-2-v-2">Schlüssel 2-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="schluessel-2-ü-2" name="course" value="Schlüssel 2-Ü">
+                            <label for="schluessel-2-ü-2">Schlüssel 2-Ü</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mathematik-für-informatiker-2-v-2" name="course" value="Mathematik für Informatiker 2-V">
+                            <label for="mathematik-für-informatiker-2-v-2">Mathematik für Informatiker 2-V</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mathematik-für-informatiker-2-p-2" name="course" value="Mathematik für Informatiker 2-P">
+                            <label for="mathematik-für-informatiker-2-p-2">Mathematik für Informatiker 2-P</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <button id="zuBestaetigung" class="zuBestaetigung" onclick="redirectToTimetable()">Zur Bestätigung</button>
+            <script>
+                function redirectToTimetable() {
+                    window.location.href = 'confirmation.html';
+                }
+            </script>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Timetable App</p>
+    </footer>
+</body>
+</html>

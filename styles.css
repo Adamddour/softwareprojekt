@@ -1,0 +1,416 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Use Poppins font */
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #ea454c;
+    color: #fff;
+    padding: 30px; /* Adjust padding as needed */
+    text-align: initial;
+    position: relative; /* Position the header relatively */
+}
+
+header img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image absolutely */
+    top: 0px; /* Adjust top position */
+    left: 20px; /* Adjust left position */
+}
+
+header h1 {
+    margin-left: 125px; /* Adjust margin-left to bring text closer to the logo */
+    margin-top: 10px; /* Adjust margin-top if needed */
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.course-selection {
+    margin-top: 20px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between course items */
+}
+
+.course-list > div {
+    flex: 1 1 calc(50% - 30px); /* Adjust the width and gap */
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.course-list label {
+    display: block;
+    margin-top: 5px;
+}
+
+#zuBestaetigung, #uploadJsonButton,#weiterButton,#zuruekZuAuswahl,#zurTimeTable{
+    background-color: #ea454c; /* Button color */
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+
+    
+}
+
+#weiterButton{
+    width: 250px;
+    float: right;
+}
+
+#zuBestaetigung{
+    width: 250px;
+    margin: 30px 260px;
+}
+
+
+footer {
+    background-color: #ea454c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.confirmation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.confirmation-container div {
+    flex: 1;
+    padding: 20px;
+}
+
+.confirmation-container h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.praktikum-requirements {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 4px solid #ea454c;
+}
+
+.praktikum-requirements h4 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.praktikum-requirements p {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+/* Style for header buttons */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.header-buttons button {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #fff; /* White border to match text color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Adjust padding for buttons */
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.header-buttons button:hover {
+    background-color: #fff; /* White background on hover */
+    color: #ea454c; /* Header color text on hover */
+}
+
+/* CSS changes for praktikum.html */
+
+/* Container for Praktikum content */
+.praktikum-container {
+    padding: 20px;
+}
+
+/* Styles for Praktikum table */
+.praktikum-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+.praktikum-table th, 
+.praktikum-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.praktikum-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Header buttons styling */
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-buttons a {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons a:hover {
+    background-color: #fff;
+    color: #ea454c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header-buttons a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .praktikum-table th,
+    .praktikum-table td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+/* CSS changes for klausur.html */
+
+/* Container for Klausur content */
+.klausur-container {
+    padding: 20px;
+}
+
+/* Styles for Klausur table */
+.klausur-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+.klausur-table th, 
+.klausur-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.klausur-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header-buttons a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .klausur-table th,
+    .klausur-table td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+.burger-menu {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    /* Adjusted right position */
+    cursor: pointer;
+    color: #fff;
+    font-size: 28px;
+    /* Increased font size */
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.menu-items {
+    display: none;
+    /* Initially hide menu items */
+    position: absolute;
+    top: 70px;
+    /* Adjust top position as needed */
+    right: 20px;
+    /* Adjust right position as needed */
+    background-color: #333;
+    /* Adjust background color */
+    padding: 10px;
+    /* Adjust padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Optional shadow */
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.menu-items.open {
+    display: block;
+    /* Display menu items when burger menu is clicked */
+}
+
+.menu-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-items ul li {
+    margin-bottom: 10px;
+}
+
+.menu-items ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu-items ul li a:hover {
+    background-color: #555;
+    /* Adjust hover background color */
+}
+
+
+
+/* Adjustments for the timetable table */
+/* Updated styles for timetable */
+.timetable-container {
+    overflow-x: auto; /* Allow horizontal scroll on small screens */
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Fixed table layout */
+}
+
+.timetable th, 
+.timetable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    word-wrap: break-word; /* Wrap long text in cells */
+    white-space: normal; /* Allow multiline content */
+}
+
+.timetable th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    width: 100px; /* Fixed width for time column */
+}
+
+.timetable td {
+    background-color: #fff;
+    min-width: 100px; /* Minimum width for content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timetable th,
+    .timetable td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .timetable th {
+        min-width: 80px; /* Adjusted minimum width for time column */
+    }
+
+    .timetable td {
+        min-width: 80px; /* Adjusted minimum width for content cells */
+    }
+
+    
+}

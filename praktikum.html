@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klausur Termine</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <h1>StudyPlannerManager</h1>
+            <img src="logow.png" alt="Header Image">
+
+        </div>
+
+
+    </header>
+    <div class="burger-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+        <!-- Burger Menu Icon (Font Awesome Icon) -->
+    </div>
+
+    <div class="menu-items" id="menuItems">
+        <ul>
+            <li><a href="timetable.html">Vorlesungen</a></li>
+            <li><a href="klausur.html">Klausur</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menuItems');
+            menu.classList.toggle('open');
+        }
+    </script>
+    <main>
+        <div class="praktikum-container">
+            <h2>Praktikum Termine</h2>
+
+            <!-- Group by courses -->
+            <h3>Mikrocontroller-P</h3>
+            <table class="praktikum-table">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Uhrzeit</th>
+                        <th>Beschreibung</th>
+                        <th>Raum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01.07.2024</td>
+                        <td>14:00 - 16:00</td>
+                        <td>Einführung in Mikrocontroller</td>
+                        <td>Raum: C5-11</td>
+                    </tr>
+                    <tr>
+                        <td>08.07.2024</td>
+                        <td>14:00 - 16:00</td>
+                        <td>Programmierung von Mikrocontrollern</td>
+                        <td>Raum: C5-11</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Webtechnologien-P</h3>
+            <table class="praktikum-table">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Uhrzeit</th>
+                        <th>Beschreibung</th>
+                        <th>Raum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>02.07.2024</td>
+                        <td>10:00 - 12:00</td>
+                        <td>Grundlagen Webtechnologien</td>
+                        <td>Raum: C6-05</td>
+                    </tr>
+                    <tr>
+                        <td>09.07.2024</td>
+                        <td>10:00 - 12:00</td>
+                        <td>Fortgeschrittene Webtechnologien</td>
+                        <td>Raum: C6-05</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IT-Sicherheit-P</h3>
+            <table class="praktikum-table">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Uhrzeit</th>
+                        <th>Beschreibung</th>
+                        <th>Raum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>03.07.2024</td>
+                        <td>16:00 - 18:00</td>
+                        <td>Grundlagen IT-Sicherheit</td>
+                        <td>Raum: C0-08</td>
+                    </tr>
+                    <tr>
+                        <td>10.07.2024</td>
+                        <td>16:00 - 18:00</td>
+                        <td>Praxis IT-Sicherheit</td>
+                        <td>Raum: C0-08</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Add more courses as needed -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Timetable App</p>
+    </footer>
+</body>
+</html>

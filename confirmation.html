@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>StudyPlannerManager</h1>
+            <img src="logow.png" alt="Header Image">
+        </div>
+    </header>
+    <main>
+        <h2>Bestätigung Ihrer Kurswahl</h2>
+        <div class="confirmation-container">
+            <div id="timetable1">
+                <h3>Stundenplan 1</h3>
+                <ul id="selectedCourses1">
+                    <li>Mikrocontroller-V</li>
+                    <li>Mathematik für Informatiker 3-Ü</li>
+                    <li>Webtechnologien 2-V</li>
+                    <li>Ringvorlesung</li>
+                    <li>Mikrocontroller-P</li>
+                </ul>
+                <div class="praktikum-requirements">
+                    <h4>Praktikumsvoraussetzungen für Mikrocontroller-P</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui vulputate, nec rutrum odio eleifend.</p>
+                    
+                </div>
+
+            </div>
+            <div id="timetable2">
+                <h3>Stundenplan 2</h3>
+                <ul id="selectedCourses2">
+                    <li>Mathematik für Informatiker 2-V</li>
+                    <li>Mathematik für Informatiker 2-P</li>
+                    <li>Java-Programmierung 2-Ü</li>
+                    <li>Java-Programmierung 2-P</li>
+                    <li>Software Engineering-Ü</li>
+                </ul>
+                <div class="praktikum-requirements">
+                    <h4>Praktikumsvoraussetzungen für Java-Programmierung 2-P</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui vulputate, nec rutrum odio eleifend.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <button id="zuruekZuAuswahl" class="zuruekZuAuswahl" onclick="redirectToHome()">Zurück zur Kurswahl</button>
+        <button id="zurTimeTable" class="zurTimeTable" onclick="redirectToAuswahl()">Weiter zur Timetable</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Timetable App</p>
+    </footer>
+    <script>
+        function redirectToHome() {
+            window.location.href = 'auswahl.html';
+        }
+
+        function redirectToAuswahl() {
+            window.location.href = 'timetable.html';
+        }
+    </script>
+</body>
+</html>

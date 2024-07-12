@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stundenplan</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <h1>StudyPlannerManager</h1>
+            <img src="logow.png" alt="Header Image">
+
+        </div>
+
+
+    </header>
+    <div class="burger-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+        <!-- Burger Menu Icon (Font Awesome Icon) -->
+    </div>
+
+    <div class="menu-items" id="menuItems">
+        <ul>
+            <li><a href="praktikum.html">Praktikum</a></li>
+            <li><a href="klausur.html">Klausur</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menuItems');
+            menu.classList.toggle('open');
+        }
+    </script>
+    
+    <main>
+        <div class="timetable-container">
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th></th> <!-- Empty cell for spacing -->
+                        <th>Montag</th>
+                        <th>Dienstag</th>
+                        <th>Mittwoch</th>
+                        <th>Donnerstag</th>
+                        <th>Freitag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>8:00</th>
+                        <td></td>
+                        <td>Mathematik für Informatiker 3-Ü<br>Raum: C7-09</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>9:00</th>
+                        <td></td>
+                        <td>Mathematik für Informatiker 3-Ü<br>Raum: C7-09</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>10:00</th>
+                        <td></td>
+                        <td>Mathematik für Informatiker 3-V<br>Raum: C7-09</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>11:00</th>
+                        <td></td>
+                        <td>Mathematik für Informatiker 3-V<br>Raum: C7-09</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>12:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mikrocontroller-P<br>Raum: C5-11</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>13:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mikrocontroller-P<br>Raum: C5-11</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>14:00</th>
+                        <td></td>
+                        <td>Webtechnologien 2-V<br>Raum: D3-16</td>
+                        <td></td>
+                        <td>Mikrocontroller-P<br>Raum: C5-11</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>15:00</th>
+                        <td></td>
+                        <td>Webtechnologien 2-V<br>Raum: D3-16</td>
+                        <td></td>
+                        <td>Mikrocontroller-P<br>Raum: C5-11</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>16:00</th>
+                        <td>Mikrocontroller-V<br>Raum: D3-16</td>
+                        <td>Webtechnologien 2-Ü<br>Raum: D3-16</td>
+                        <td>Webtechnologien 2-P<br>Raum: C6-05</td>
+                        <td></td>
+                        <td>IT-Sicherheit-V<br>Raum: Lise-Meitner-Allee 4 (ITS)</td>
+                    </tr>
+                    <tr>
+                        <th>17:00</th>
+                        <td>Mikrocontroller-V<br>Raum: D3-16</td>
+                        <td></td>
+                        <td>Ringvorlesung<br>Raum: D3-16</td>
+                        <td></td>
+                        <td>IT-Sicherheit-P<br>Raum: C0-08</td>
+                    </tr>
+                    <tr>
+                        <th>18:00</th>
+                        <td>Mikrocontroller-Ü<br>Raum: D3-16</td>
+                        <td></td>
+                        <td>Ringvorlesung<br>Raum: D3-16</td>
+                        <td></td>
+                        <td>IT-Sicherheit-P<br>Raum: C0-08</td>
+                    </tr>
+                    <tr>
+                        <th>19:00</th>
+                        <td></td>
+                        <td></td>
+                        <td>Ringvorlesung<br>Raum: D3-16</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Timetable App</p>
+    </footer>
+</body>
+</html>
